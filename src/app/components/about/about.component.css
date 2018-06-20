@@ -1,0 +1,75 @@
+.list-group-item {
+    padding: 5px 10px;
+}
+li.borderless {
+    border-style: none;
+    margin-top: 0 !important;
+    padding-left: 13rem; 
+}
+p.lead {
+    font-family: "lora-regular", serif;
+	font-size: 2rem;
+	padding-left: 10rem;
+}
+.column {
+    float: left;
+	width: 25%;
+	padding:5px 0px 5px 0px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+	display: table;
+}
+/**
+ * responsive:
+ * about
+ * -------------------------------------------------------------------
+ */
+@media only screen and (max-width:768px) {
+	/*img {
+		height: 7.8rem;
+		width: 7.8rem;
+	}*/
+	.lead {
+		padding-left: 11rem;
+	}
+}
+@media only screen and (max-width:600px) {
+
+	/*img {
+		height: 6.6rem;
+		width: 6.6rem;
+		float: none;
+		display: inline-block;
+	}*/
+	.lead {
+		padding-left: 0;
+		text-align: center;
+	}
+}
+@media only screen and (max-width:768px) {
+	p.lead {
+		font-size: 1.7rem;
+	}
+}
+
+l {
+	list-style: decimal;
+}
+ul {
+	list-style: disc;
+}
+li {
+	display: list-item;
+}
+ol, ul {
+	margin-left: 1.7rem;
+}
+ul li {
+	padding-left: .4rem;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin: .6rem 0 .6rem 1.7rem;
+}

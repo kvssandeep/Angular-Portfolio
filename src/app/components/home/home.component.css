@@ -1,0 +1,174 @@
+img {
+    background: url("../../../assets/web1.jpg");
+    height: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	background-color: black;
+	margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-top: 300px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text h3{
+    color: #cc005f;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 3.8rem;
+	line-height: 1.565;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    animation:
+    fade-in 6s forwards,
+    space 2s 2.5s forwards;
+}
+
+
+.hero-text h1{
+    font-family: "poppins-medium", sans-serif;
+	font-size: 8.0rem;
+	line-height: 1.071;
+	max-width: 900px;
+	margin-bottom: .6rem;
+	margin-left: auto;
+	margin-right: auto;
+    color: crimson;
+    animation:
+      fade-in 8s forwards,
+      shrink 5s forwards,
+      space 2s 2.5s forwards;
+}
+.hero-text .intro-position{
+    font-family: "lora-regular", serif;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	color: white;      /*change it to white*/
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    animation:
+    fade-in 6s forwards,
+    space 2s 2.5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: .025;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shrink {
+  to {
+    font-size: 78px;    /* After shrink the fonr size */
+  }
+}
+
+
+@keyframes space {
+  to {
+    letter-spacing: .04em; /* after shrink the space between the letters*/
+  }
+}
+
+.hero-text .intro-position span {
+	display: inline-block;
+}
+.hero-text .intro-position span::before {
+	content: "|";
+    text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 14px;
+	color: white;
+}
+
+.hero-text .intro-position span::after {
+	content: "|";
+    text-align: center;
+	display: inline-block;
+	padding: 0 14px 0 14px;
+	color: white;
+}
+
+
+.hero-text .button {
+    color:white !important;    /*chnage it to white*/
+	border-color: none;
+	height: 6rem !important;
+	line-height: 5.4rem !important;
+	padding: 0 3.5rem 0 3rem !important;
+	margin-top: .6rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	background-color: transparent;
+	outline:none !important;
+	border: none;
+	
+}
+
+
+.hero-text .button:hover, .hero-text .button:focus .button-active .button {
+	outline: none;
+	color:black;
+	box-shadow: none;
+    background-color: transparent;
+}
+
+
+
+
+
+@media only screen and (max-width:1024px) {
+	.hero-text h1 {
+		font-size: 7.6rem;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	#intro {
+		min-height: 660px;
+	}
+	.hero-text h1 {
+		font-size: 5.2rem;
+	}
+	.hero-text h3 {
+		font-size: 1.8rem;
+	}
+	.hero-text .intro-position {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width:600px) {
+
+	.hero-text h1 {
+		font-size: 4.6rem;
+		margin-bottom: .6rem;
+	}
+	.hero-text h3 {
+		font-size: 1.5rem;
+		margin-bottom: .3rem;
+		letter-spacing: .2rem;
+	}
+	.hero-text .intro-position {
+		font-size: 1.2rem;
+	}
+	.hero-text .intro-position span {
+		padding: 0 .6rem;
+	}
+	.hero-textt .intro-position span::before, .hero-text .intro-position span::after {
+		display: none !important;
+	}
+}
