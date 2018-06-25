@@ -1,20 +1,55 @@
 
 .education-header h2 {
 	color: #FF0077;
-	font-size: 3rem;
+    font-size: 3rem;
+    padding-top: 1rem;
 }
 .pagination {
     display: inline-block;
 }
+.projects-body{
+    padding-top: 1.5rem;
 
+}
 .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
 }
-
+.icon-prev {
+    margin-left: -10rem;
+}
+.icon-next{
+    margin-right: -12rem;
+}
 .pagination a.active {
-    background-color: #4CAF50;
     color: white;
+}
+.carousel-indicators{
+    bottom: -2rem !important;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #93868c;
+}
+.carousel-indicators .active {
+    background-color: #16070e;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#93868c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#93868c' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }

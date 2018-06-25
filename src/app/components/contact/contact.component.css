@@ -2,3 +2,32 @@
 	color: #FF0077;
 	font-size: 3rem;
 }
+.icon {
+	color: #50737a;
+	font-size: 1.6rem;
+}
+.side-head {
+	font-size: 1.4rem;
+	font-family: Aguafina Script;
+}
+.label-header {
+	font-size: 1.2rem;
+}
+label:after {
+ content:"*" ;
+color:red    
+}
+.email {
+	text-decoration: none;
+}
+.social-icons {
+	font-size: 2.5rem;
+	color: #50737a;
+}
+.copy {
+	text-decoration: none;
+	color: #50737a;
+}
+.submit-text {
+	font-size: 1.3rem;
+}
